@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="password-modal" class="modal">
+            <div class="modal-content">
+                <h2>Enter Password</h2>
+                <div class="input-container">
+                    <input type="password" id="password-input" placeholder="Password">
+                    <button class="eye-button" id="eye-button" onclick="togglePasswordVisibility()">👁️</button>
+                </div>
+                <button id="password-submit">Submit</button>
+                <p id="error-message" class="hidden">YAH T5OUN FYA 😡😡😡😡😡.</p>
+            </div>
+        </div>
+        <div id="puzzle1-container" class="puzzle-container"></div>
+        <div id="puzzle2-container" class="puzzle-container"></div>
+        <div id="puzzle3-container" class="puzzle-container"></div>
+        <div id="message" class="hidden">
+            I Love You Yosr, do you wanna marry me? 🥹🎀!
+            <div class="button-container">
+                <button id="yes-button">Yes</button>
+                <button id="no-button">No</button>
+            </div>
+        </div>
+        <div id="video-modal" class="modal hidden">
+            <div class="modal-content">
+                <video id="proposal-video" width="600" controls>
+                    <source src="Snapchat-1658742061 (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="close-video">Close</button>
+            </div>
+        </div>
+        <div id="second-video-modal" class="modal hidden">
+            <div class="modal-content">
+                <video id="second-video" width="600" controls>
+                    <source src="images/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="close-second-video">Close</button>
+            </div>
+        </div>
+        <div id="heart-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Tap and hold to fill the heart! 💖</h2>
+                <div id="heart-container">
+                    <div id="heart"></div>
+                </div>
+                <p id="tap-instruction">Tap and hold...</p>
+            </div>
+        </div>
+        <div id="letter-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>A Letter for You</h2>
+                <p id="letter-content">My dearest Yosr, <br><br> [tw nekteblk el lettre ba3ed enti 9otli sakker wo or9od ] <br><br> Love, <br> [Your Eternal Lover ADEM]</p>
+                <button id="close-letter">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
